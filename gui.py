@@ -1,5 +1,4 @@
 import os
-from typing import Any
 def create_screen(title= str, options= []):
     var = ""
     for i in range(len(title)):
@@ -19,8 +18,8 @@ def create_screen(title= str, options= []):
 
 def sum(a, b):
     print(a + b)
-def check_election(then= str, par= Any):
-    o67ption = input("Your election: ")
+def check_election(then= str, par= None):
+    option = input("Your election: ")
 
     if then == "print-text-clear":
         os.system("cls") #clear()
@@ -28,8 +27,4 @@ def check_election(then= str, par= Any):
     elif then == "print-text-no-clear":
         print(par)
     elif then == "continue-game":
-        par
-
-
-
-create_screen("Foto Culo", [2, "Happy meal", "Kiero k seas mi nobio bb"])
+        print(par)
